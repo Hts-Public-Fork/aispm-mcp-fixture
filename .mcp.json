@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/workspace"],
+      "autoApprove": ["read_file", "write_file", "list_directory", "move_file"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "autoApprove": ["create_issue", "create_pull_request"],
+      "env": { "GITHUB_TOKEN": "PLACEHOLDER-SEE-README" }
+    },
+    "postgres": {
+      "command": "uvx",
+      "args": ["mcp-server-postgres"],
+      "env": { "DATABASE_URL": "${env:DATABASE_URL}" }
+    }
+  }
+}

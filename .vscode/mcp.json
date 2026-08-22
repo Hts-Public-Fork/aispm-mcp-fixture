@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "autoApprove": ["brave_web_search"]
+    }
+  }
+}
