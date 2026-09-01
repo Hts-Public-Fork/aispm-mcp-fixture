@@ -22,3 +22,5 @@ to fire on.
 That last row is the point. `User-Agent`, `user_agent`, `storage`, `coverage`,
 `average`, `leverage` and `"application/json"` were all reported as AI usage
 until 2026-08-21. They are kept here so a regression is visible.
+
+<!-- signing rollout probe 2026-09-01T07:08:18Z: forces a scan job so the signature verdict can be observed -->
